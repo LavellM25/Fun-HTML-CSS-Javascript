@@ -1,0 +1,165 @@
+<!--Date: 12-31-2024-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSP Access Point Newsletter - 11.28.2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        .highlight {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #4CAF50;
+        }
+
+        .collapsible {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            margin: 10px 0;
+            width: 100%;
+            text-align: left;
+        }
+
+        .content {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .contact-info {
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MSP Access Point Newsletter</h1>
+        <p>11.28.2024</p>
+    </header>
+    <main>
+        <section>
+            <p>
+                I would like to wish everyone a Happy Thanksgiving and safe travels during this holiday season! Our
+                Access Point team is very thankful to have each and every one of you involved in our program. None of
+                this would be possible without our wonderful cohort participants and their support systems. Enjoy this
+                time spent with your loved ones and relaxing over the break!
+            </p>
+        </section>
+        <section>
+            <h2>Events for the Week</h2>
+            <div class="highlight">
+                <p><strong>Cohort 4</strong></p>
+                <ul>
+                    <li>Monday, 12/2 - Virtual with Quincy</li>
+                    <li>Tuesday, 12/3 - Virtual, ITEC(2903) 10-11:50am, ITEC(1375) 12-2:55pm</li>
+                    <li>Wednesday, 12/4 - In-person at Daugherty 9am-4pm (Don't forget your lunch!)</li>
+                    <li>Thursday, 12/5 - In-person at Daugherty 9am-4pm (Don't forget your lunch!)</li>
+                    <li>Friday, 12/6 - In-person at Daugherty 9am-4pm (Don't forget your lunch!)</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Other Important Dates</h2>
+            <ul>
+                <li>December 1st - PSEO Due Date (C5), FAFSA Opens (C4/C5)</li>
+                <li>December 18th - Last Day of Class (C4)</li>
+                <li>December 19th - Last Day of Class (C5)</li>
+                <li>December 20th - Graduation for C4! 5:30-7pm (Dinner, capstone presentations)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Self-Care Tips</h2>
+            <button class="collapsible">View Self-Care Tips</button>
+            <div class="content">
+                <ul>
+                    <li>Make sleep part of your self-care routine.</li>
+                    <li>Exercise daily as part of your self-care routine.</li>
+                    <li>Eat right for self-care.</li>
+                    <li>Take a self-care break by getting outside.</li>
+                    <li>Read a book for self-care.</li>
+                    <li>Schedule your self-care time.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MSP Access Point Team</p>
+    </footer>
+
+    <script>
+        const collapsibles = document.querySelectorAll(".collapsible");
+        collapsibles.forEach(btn => {
+            btn.addEventListener("click", function () {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                content.style.display = content.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+</body>
+
+</html>
