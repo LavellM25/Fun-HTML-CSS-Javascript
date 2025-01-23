@@ -1,0 +1,145 @@
+#subscribe{
+    /*rgb values ranges from 0-255 for red, green, and blue.*/
+    /*rgb values for white: rgb (255,255,255) and for black (0,0,0)*/
+    background-color: #d93e3e;
+    /*Change the text color to white*/
+    color:white;
+    /*It will no longer have a black border for the button*/
+    border:none;
+    height:40px;
+    width:100px;
+    border-radius:5px;
+    /*Allow user to get a hand when they hover over a button*/
+    cursor:pointer;
+    /*This will give some space to the right so the buttons are not too clustered together*/
+    margin: 8px;  /* Will allow margin all around the button for left, right, bottom, up */
+    display:block;  /* Will align all the buttons used to be on their own line */
+}
+#subscribe:hover{  /* This will create a pseudo class that only allows to the subscribe button */
+    /*When user hover over this button, the following styles will be applied*/
+    /*background-color: green;*/
+    opacity: 0.7;
+}
+#subscribe:active{  /* This will be a another psuedo class that is only applied to the subscribe button */
+    /*The following properties will only be applied when the button is clicked on by the user*/
+    /*background-color: blue;*/
+    opacity: 0.3;   /* Opacity is measured from 0 to 1. 1 meaning no change, 0 the button is cleared out "white" */
+}
+#join{
+    color: #3638df;
+    background-color: white;
+    height:40px;
+    border-radius: 2px;
+    border-color: #3638df;
+    border-style: solid;
+    border-width: 1px;
+    height: 40px;
+    width:60px;
+    cursor: pointer;
+    /*This will give some space to the right so the buttons are not too clustered together*/
+    margin-right: 8px;
+    display:block;  /* Will align all the buttons used to be on their own line */
+    margin: 8px;  /* Will allow margin all around the button for left, right, bottom, up */
+}
+/*In CSS, use # to target id and "." to target a class.*/
+
+#join:hover{
+    color: black;
+    background-color: #3638df;
+}
+
+#join:active{
+    opacity: 0.7;
+}
+
+#tweet{
+    color: white;
+    background-color: rgb(2, 137, 255);
+    border:none;
+    height:40px;
+    width:100px;
+    border-radius:20px;
+    font-weight: bold; /* Allows font to be bolded */
+    cursor:pointer;
+    font-size: 14px;
+    margin-right: 8px;
+    display:block;  /* Will align all the buttons used to be on their own line */
+    margin: 8px;  /* Will allow margin all around the button for left, right, bottom, up */
+
+}
+/*All the following buttons are for general practice of concepts learned in the video.*/
+#Request-Now {
+    /*Example of Uber button*/
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border:none;
+    height:40px;  /* Make sure height is consistent for all buttons */
+    width:100px;
+    cursor: zoom-in;  /* This will allow the user when hover over button to have a zoom-in */
+    font-size: 14px;
+    margin-right: 8px;
+    display:block;  /* Will align all the buttons used to be on their own line */
+    margin: 8px;  /* Will allow margin all around the button for left, right, bottom, up */
+
+
+}
+#Add-to-cart {
+    /*Example of button on Amazon website*/
+    background-color: rgb(255, 216, 20);
+    border:none;
+    height:40px;
+    width:110px;
+    border-radius:20px;
+    font-family: "Arial","Javanese Text";
+    cursor: wait;  /* When user hover over button, will have clock like time capsul over button */
+    display:block;  /* Will align all the buttons used to be on their own line */
+    margin: 8px;  /* Will allow margin all around the button for left, right, bottom, up */
+
+}
+
+.button-row {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    margin-bottom: 10px; /* Add spacing between rows */
+    margin-right: 10px;
+}
+
+#Sign-Up {
+    color: white;
+    background-color: rgb(89, 191, 117);
+    border:none;
+    height:40px;
+    width:100px;
+    border-radius:8px;
+    font-weight: bold;
+    font-family: "Arial","Javanese Text";
+    font-size: 15px;
+    margin: 8px;
+}
+#LinkedIn {
+    color: white;
+    background-color: rgb(10, 102, 194);
+    border:none;
+    height:40px;
+    width:205px;
+    border-radius:22px;
+    font-weight: bold;
+    font-family: "fangsong";
+    font-size: 15px;
+    margin-right: 17px;
+    cursor: help;  /*  When user hover over button, it will have question mark */
+}
+
+#Save {
+    color: rgb(10, 102, 194);
+    background-color: white;
+    border-color: rgb(10, 102, 194);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 25px;
+    height: 40px;
+    width:85px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: cell;  /* User hover's over button will see plus sign */
+}
