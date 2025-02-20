@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: beige;
+}
+
+h1 {
+    margin-top: 20px;
+    color: yellow;
+}
+
+.soundboard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.sound-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.sound-btn:hover {
+    background-color: #0056b3;
+}
