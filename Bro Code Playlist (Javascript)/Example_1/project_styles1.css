@@ -1,0 +1,15 @@
+#header {
+    background-color: indigo;
+    font-family: Broadway;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+/*To remember, to get elements by id use # and to get elements by class use . */
+
+#paragraph {
+    font-size: 2em;
+    font-family: Georgia;
+    color: green;
+}
