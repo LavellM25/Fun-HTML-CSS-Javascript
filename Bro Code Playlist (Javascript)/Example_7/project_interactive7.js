@@ -1,0 +1,1 @@
+console.log("Hello World Project"); // Test that the JS code is working
