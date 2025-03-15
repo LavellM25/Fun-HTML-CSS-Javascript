@@ -1,0 +1,35 @@
+/*Verify CSS styles work w/ HTML file*/
+
+#header1 {
+    color: red;
+}
+
+/*
+ */
+
+#countLabel {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Times New Roman";
+}
+
+#buttonsContainer {
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 150%;
+    color: dodgerblue;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+/*When you hover over one of the buttons, I will add the following psuedo classes*/
+
+.button:hover {
+    background-color: rgb(90, 180, 255);
+}
