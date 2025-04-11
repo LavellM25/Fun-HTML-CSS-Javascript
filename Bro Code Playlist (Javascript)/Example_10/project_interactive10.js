@@ -59,3 +59,5 @@ else if (number >= 13 && number <= 17) {  // 13–17 → "You are a teenager"
 else {  // ≥ 18 → "You are an adult"
     console.log("You are a adult");
 }
+
+// Fifth Example
