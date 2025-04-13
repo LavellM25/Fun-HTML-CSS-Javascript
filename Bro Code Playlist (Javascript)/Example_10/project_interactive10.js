@@ -60,4 +60,62 @@ else {  // ≥ 18 → "You are an adult"
     console.log("You are a adult");
 }
 
-// Fifth Example
+// Fifth Example will be a project using some HTML/CSS example
+
+// First, we connect our HTML elements to JavaScript using their ID attributes.
+// This allows us to reference and interact with these elements in the script.
+const myText = document.getElementById("myText");             // Refers to the input box where the user types their age
+const mySubmit = document.getElementById("submit-button");    // Refers to the submit button
+const result = document.getElementById("result");             // Refers to the <p> element where results will be displayed
+
+let money; // We declare a variable named 'money' to store the user input (age)
+
+/**
+ * The program waits for the user to click the Submit button.
+ * It then reads the number they typed, converts it to a number, and checks conditions using if/else.
+ * Based on their age, a custom message is shown both in the console (for developers) and on the webpage (for the user).
+ */
+
+// Add an event listener to the submit button that runs this function when clicked
+mySubmit.onclick = function () {
+
+    // STEP 1: Capture the input value and convert it from a string to a number
+    money = Number(myText.value); // This makes sure we are working with a number, not a string
+
+    // STEP 2: We now evaluate the user's age using a series of if...else if...else conditions
+
+    // Case 1: If the user is 100 or older
+    if (money >= 100) {
+        console.log("You are too old to visit this site.");  // This message is logged to the browser's console
+        result.textContent = "You are too old to visit this site."; // This message is displayed on the web page
+    }
+
+    // Case 2: If the user entered 0 as their age
+    else if (money == 0) {
+        console.log("You can't enter this site, you were just born");
+        result.textContent = "You can't enter this site, you were just born.";
+    }
+
+    // Case 3: If the user is between 18 and 99 (inclusive), they are allowed to enter
+    else if (money >= 18) {
+        console.log("Welcome! You are allowed to enter this site.");
+        result.textContent = "Welcome! You are allowed to enter this site.";
+    }
+
+    // Case 4: If the user entered a negative number (not valid for age)
+    else if (money < 0) {
+        console.log("You have entered a number that is not valid.");
+        result.textContent = "You have entered a number that is not valid.";
+    }
+
+    // Case 5: If none of the above match (e.g., age is under 18 but more than 0)
+    else {
+        console.log("You must be 18+ to enter this site.");
+        result.textContent = "You must be 18+ to enter this site.";
+    }
+
+    // This whole function runs each time the user clicks the submit button.
+    // It reads the input, evaluates it, and displays a result message based on their age.
+}
+
+
