@@ -104,8 +104,8 @@ mySubmit.onclick = function () {
 
     // Case 4: If the user entered a negative number (not valid for age)
     else if (money < 0) {
-        console.log("You have entered a number that is not valid.");
-        result.textContent = "You have entered a number that is not valid.";
+        console.log("You have entered a number that is not valid. The number must be greater than 0.");
+        result.textContent = "You have entered a number that is not valid. The number must be greater than 0.";
     }
 
     // Case 5: If none of the above match (e.g., age is under 18 but more than 0)
