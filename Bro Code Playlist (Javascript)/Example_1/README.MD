@@ -1,6 +1,8 @@
 # 🛫 Project 1: Intro to HTML, CSS, and JavaScript Integration
 
-Welcome to **Project 1**, a simple yet educational web page demonstrating the integration of HTML, CSS, and JavaScript. This project is designed as a beginner-friendly template for understanding how to link and style web elements, and how to manipulate them dynamically with JavaScript.
+Welcome to **Project 1**, a simple yet educational web page demonstrating the integration of HTML, CSS, and JavaScript. 
+This project is designed as a beginner-friendly template for understanding how to link and style web elements, 
+and how to manipulate them dynamically with JavaScript.
 
 ---
 
