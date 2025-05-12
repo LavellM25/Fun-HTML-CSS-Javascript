@@ -39,11 +39,15 @@ console.log(weatherMessage);
 // Print this logic to the console.
 // console.log(message);
 
-let age = 0;
-let voteMessage = age < 18 ? "You can't vote yet" :
+let age = 75;
+let voteMessage =
+    // First Condition: Checks if the age is less than 18.
+    age < 18 ? "You can't vote yet" :
 
-    age >= 18 || age >= 65  ? "You can vote" :
+        // Second Condition: Checks if the age is between 18 and 64 (inclusive).
+        age >= 18 && age < 65  ? "You can vote" :
 
-        "You can vote and qualify for senior benefits."
+            // Third Condition: (Default): If the age is 65 or older, it falls to the default message.
+            "You can vote and qualify for senior benefits."
 
 console.log(voteMessage);
