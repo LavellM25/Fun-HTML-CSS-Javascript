@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="AllStar Performance Lab provides sport-specific training programs for baseball, football, basketball, volleyball, and tennis athletes." />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Home | AllStar Performance Lab</title>
+</head>
+<body>
+<!-- Skip link for keyboard users -->
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header role="banner">
+    <div class="container header__inner">
+        <a href="index.html" class="brand" aria-label="AllStar Performance Lab home">
+            <img
+                    src="gym.jpg"
+                    alt="AllStar Performance Lab logo"
+                    class="brand__logo"
+                    width="300"
+                    height="168"
+            />
+        </a>
+
+        <div class="brand__text">
+            <h1 class="site-title">AllStar Performance Lab</h1>
+            <p class="site-tagline">Sport-specific training to unlock speed, strength, and agility.</p>
+        </div>
+
+        <!-- Mobile-friendly navigation toggle -->
+        <input type="checkbox" id="nav-toggle" aria-label="Open main menu" />
+        <label for="nav-toggle" class="hamburger" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </label>
+
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main" class="container" role="main">
+    <!-- Hero section -->
+    <section class="section section--hero" aria-labelledby="hero-heading">
+        <h1 id="hero-heading" class="sr-only">Training environment</h1>
+        <figure class="hero">
+            <img
+                    src="cone.jpg"
+                    alt="Athletes sprinting through cone drills on indoor turf"
+                    width="300"
+                    height="168"
+                    class="hero__img"
+            />
+            <figcaption class="muted">
+                Personalized programs for baseball, football, basketball, volleyball, and tennis athletes.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Mission section -->
+    <section class="section" aria-labelledby="mission-heading">
+        <h2 id="mission-heading">Our mission</h2>
+        <p>
+            At AllStar Performance Lab, we design science-backed, sport-specific programs that help athletes at every level
+            move faster, get stronger, and stay healthier. Our certified coaches tailor training to your position, season,
+            and goals.
+        </p>
+    </section>
+
+    <!-- Who we train -->
+    <section class="section" aria-labelledby="who-heading">
+        <h2 id="who-heading">Who we train</h2>
+        <p>
+            Youth, club, varsity, college prep, and adult athletes who want measurable improvements in speed, agility, and power.
+        </p>
+    </section>
+
+    <!-- Core services -->
+    <section class="section" aria-labelledby="services-heading">
+        <h2 id="services-heading">Core services</h2>
+        <div class="grid">
+            <article class="card">
+                <h3>Strength and conditioning</h3>
+                <p class="muted">Sport-specific programs that build resilient power and reduce injury risk.</p>
+            </article>
+
+            <article class="card">
+                <h3>Speed and agility</h3>
+                <p class="muted">Linear acceleration, change of direction, and reaction drills for game-day speed.</p>
+            </article>
+
+            <article class="card">
+                <h3>Mobility and recovery</h3>
+                <p class="muted">Movement prep, tissue care, and post-session protocols to keep you training.</p>
+            </article>
+        </div>
+
+        <p class="center" style="margin-top: var(--space-4)">
+            <a class="button" href="services.html">See all services</a>
+        </p>
+    </section>
+</main>
+
+<footer role="contentinfo">
+    <div class="container footer__inner">
+        <address class="footer__address">
+            <strong>AllStar Performance Lab</strong><br />
+            123 Training Way, Suite 200, Your City, ST 00000<br />
+            <a href="mailto:info@allstarperformancelab.com">info@allstarperformancelab.com</a><br />
+            <a href="tel:+15551234567">(555) 123-4567</a>
+        </address>
+        <p class="center">© 2025 AllStar Performance Lab</p>
+    </div>
+</footer>
+</body>
+</html>
