@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AllStar Performance Lab provides performance training and sport-specific development programs for athletes." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Services | AllStar Performance Lab</title>
+</head>
+<body>
+<!-- Skip link for keyboard users -->
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header role="banner">
+  <div class="container header__inner">
+    <a href="index.html" class="brand" aria-label="AllStar Performance Lab home">
+      <img
+              src="images/gym.jpg"
+              alt="AllStar Performance Lab logo"
+              class="brand__logo"
+              width="300"
+              height="168"
+      />
+      <div class="brand__text">
+        <div class="site-title">AllStar Performance Lab</div>
+        <div class="site-tagline">Sport-specific training to unlock speed, strength, and agility.</div>
+      </div>
+    </a>
+
+    <!-- Mobile navigation toggle -->
+    <input type="checkbox" id="nav-toggle" aria-label="Open main menu" />
+    <label for="nav-toggle" class="hamburger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container" role="main">
+  <!-- Services overview -->
+  <section class="section" aria-labelledby="svc-heading">
+    <h1 id="svc-heading">Our Services</h1>
+    <p>
+      Choose a program that fits your athletic season, training goals, and schedule.
+      Every session is coached, and progress is tracked using evidence-based methods.
+    </p>
+
+    <div class="grid">
+      <article class="card" aria-labelledby="starter">
+        <h2 id="starter">Starter Assessment</h2>
+        <p>Movement screen, baseline testing, and a 4-week individualized plan to jumpstart progress.</p>
+        <p class="muted">From $99</p>
+      </article>
+
+      <article class="card" aria-labelledby="inseason">
+        <h2 id="inseason">In-Season Maintenance</h2>
+        <p>Two sessions per week focusing on strength, mobility, and performance recovery during your season.</p>
+        <p class="muted">From $199 / month</p>
+      </article>
+
+      <article class="card" aria-labelledby="offseason">
+        <h2 id="offseason">Off-Season Development</h2>
+        <p>Comprehensive three-session weekly plan for speed, strength, and power development.</p>
+        <p class="muted">From $349 / month</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sport-specific focus -->
+  <section class="section" aria-labelledby="sports-heading">
+    <h2 id="sports-heading">Sport Focus</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Baseball and Softball</h3>
+        <p class="muted">Rotational power, sprint mechanics, and arm care integrated into every training block.</p>
+      </article>
+
+      <article class="card">
+        <h3>Football</h3>
+        <p class="muted">Position-specific speed, power, and injury prevention tailored for all levels of play.</p>
+      </article>
+
+      <article class="card">
+        <h3>Basketball, Volleyball, and Tennis</h3>
+        <p class="muted">Reactive agility, vertical jump enhancement, and stability for quick court transitions.</p>
+      </article>
+    </div>
+  </section>
+
+<!--  Services page: Dynamic Image Gallery-->
+  <section class="section" aria-labelledby="gallery-heading">
+    <h2 id="gallery-heading">Training Gallery</h2>
+
+    <!-- Live announcement for screen readers -->
+    <div class="sr-only" aria-live="polite" id="gallery-live"></div>
+
+    <!-- Large preview -->
+    <figure class="card" id="gallery-preview" aria-label="Selected image preview">
+      <!-- JS will inject <img> and <figcaption> -->
+    </figure>
+
+    <!-- Controls -->
+    <div class="center" style="margin: var(--space-3) 0;">
+      <button type="button" class="button" id="gallery-prev" aria-label="Previous image">Previous</button>
+      <button type="button" class="button" id="gallery-next" aria-label="Next image">Next</button>
+    </div>
+
+    <!-- Thumbnails list -->
+    <ul class="grid" id="gallery-thumbs" role="list">
+      <li>
+        <button type="button" class="thumb"
+                data-full="images/services/acceleration.jpg"
+                data-alt="Athlete performing acceleration drill with cones"
+                data-caption="Acceleration mechanics session">
+          <img src="images/cone.jpg"
+               alt="Acceleration drill thumbnail" loading="lazy" />
+        </button>
+      </li>
+      <li>
+        <button type="button" class="thumb"
+                data-full="images/services/strength.jpg"
+                data-alt="Coach spotting athlete on strength lift"
+                data-caption="Strength block — coached sets">
+          <img src="images/gym.jpg"
+               alt="Strength training thumbnail" loading="lazy" />
+        </button>
+      </li>
+      <!-- add 2–4 more similarly -->
+    </ul>
+
+  </section>
+
+
+  <!-- FAQ Section -->
+  <section class="section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">Frequently Asked Questions</h2>
+
+    <div class="card" id="faq">
+      <!-- #1 -->
+      <div class="faq-item">
+        <h3>
+          <button type="button" class="faq-q" aria-expanded="false"
+                  aria-controls="faq-a1" id="faq-q1">
+            Do you train beginners?
+          </button>
+        </h3>
+        <div id="faq-a1" class="faq-a" role="region"
+             aria-labelledby="faq-q1" hidden>
+          <p class="muted">Yes, we scale all workouts to each athlete’s ability level and movement experience.</p>
+        </div>
+      </div>
+
+      <!-- #2 -->
+      <div class="faq-item">
+        <h3>
+          <button type="button" class="faq-q" aria-expanded="false"
+                  aria-controls="faq-a2" id="faq-q2">
+            What age groups do you work with?
+          </button>
+        </h3>
+        <div id="faq-a2" class="faq-a" role="region"
+             aria-labelledby="faq-q2" hidden>
+          <p class="muted">Middle school through adult athletes. We also offer youth speed clinics throughout the year.</p>
+        </div>
+      </div>
+
+      <!-- #3 -->
+      <div class="faq-item">
+        <h3>
+          <button type="button" class="faq-q" aria-expanded="false"
+                  aria-controls="faq-a3" id="faq-q3">
+            Do you offer team or group training?
+          </button>
+        </h3>
+        <div id="faq-a3" class="faq-a" role="region"
+             aria-labelledby="faq-q3" hidden>
+          <p class="muted">Yes. We provide discounted team sessions and small-group pricing for pre-season prep.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+</main>
+
+<footer role="contentinfo">
+  <div class="container footer__inner">
+    <address class="footer__address">
+      <strong>AllStar Performance Lab</strong><br />
+      123 Training Way, Suite 200, Your City, ST 00000<br />
+      <a href="mailto:info@allstarperformancelab.com">info@allstarperformancelab.com</a><br />
+      <a href="tel:+15551234567">(555) 123-4567</a>
+    </address>
+    <p class="center">© 2025 AllStar Performance Lab</p>
+  </div>
+</footer>
+
+<!-- Assignment 3 JS -->
+<script src="script.js" defer></script>
+</body>
+</html>
